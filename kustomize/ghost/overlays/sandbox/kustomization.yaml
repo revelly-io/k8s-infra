@@ -3,6 +3,14 @@ kind: Kustomization
 
 namespace: sandbox
 
+generatorOptions:
+  disableNameSuffixHash: true
+
+secretGenerator:
+  - name: ghost-smtp
+    envs:
+      - smtp.env
+
 resources:
   - ../../base
   - ingress.yaml

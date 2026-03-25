@@ -11,3 +11,4 @@ compose/.env
 **/values-secret.yaml
 **/secrets.yaml
 **/secret.yaml
+kustomize/ghost/**/smtp.env

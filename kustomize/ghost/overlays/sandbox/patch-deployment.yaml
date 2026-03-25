@@ -7,6 +7,9 @@ spec:
     spec:
       containers:
         - name: ghost
+          envFrom:
+            - secretRef:
+                name: ghost-smtp
           env:
             - name: url
               value: http://blog.revelly.io
